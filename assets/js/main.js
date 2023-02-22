@@ -73,7 +73,9 @@ const player = new Player({
     x: 100,
     y: 0,
   },
-  collisionBlocks: collisionBlocks,
+  collisionBlocks,
+  imageSrc: 'assets/warrior/Idle.png',
+  frameRate: 8,
 });
 
 function animate() {
@@ -115,7 +117,7 @@ window.addEventListener('keydown', (e) => {
       keys.right.pressed = true;
       break;
     case 'ArrowUp': 
-      player.velocity.y = -20;
+      player.velocity.y = -8;
       break;
   }
 });
